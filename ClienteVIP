@@ -1,0 +1,15 @@
+import java.io.*;
+import java.util.ArrayList;
+import java.util.InputMismatchException;
+import java.util.Scanner;
+import java.io.Serializable;
+
+//cliente vip
+class ClienteVIP extends Cliente implements Serializable {
+    private float desconto; // Novo atributo específico para clientes VIP
+
+    ClienteVIP(String nome, String codigo, Label label, float desconto) {
+        super(nome, codigo, label);
+        this.desconto = desconto;
+    }
+}
